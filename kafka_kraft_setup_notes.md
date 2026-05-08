@@ -110,17 +110,9 @@ localhost:9092
 
 ---
 
-# ✅ Step 4: Verify Kafka Installation
 
-List all topics:
 
-```cmd
-bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
-```
-
----
-
-# 🧵 Step 5: Create a Kafka Topic
+# 🧵 Step 4: Create a Kafka Topic
 
 Create a topic named `order-events`:
 
@@ -136,6 +128,16 @@ Expected output:
 
 ```txt
 Created topic order-events.
+```
+
+---
+
+# ✅ Step 5: Verify Kafka Installation
+
+List all topics:
+
+```cmd
+bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 
 ---

@@ -88,11 +88,19 @@ hd9d4_4uTAW-Wtg13LnwUQ
 
 ## 2️⃣ Format Kafka Storage
 
-Use the generated Cluster ID:
+If you get a **cluster.id mismatch** or `meta.properties` related error, first delete the old logs directory:
+
+```cmd
+rmdir /s /q logs
+```
+
+Then use the generated Cluster ID to format Kafka storage:
 
 ```cmd
 bin\windows\kafka-storage.bat format -t hd9d4_4uTAW-Wtg13LnwUQ -c config\server.properties
 ```
+
+This removes old Kafka metadata and creates fresh storage with the new Cluster ID ✅
 
 ---
 
